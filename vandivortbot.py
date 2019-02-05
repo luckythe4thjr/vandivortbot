@@ -9,7 +9,7 @@ TOKEN = 'TOKEN'
 
 client = commands.Bot(command_prefix = 'v/')
 client.remove_command('help')
-status = ['Msg1', 'Msg2', 'Msg3']
+status = ['Prefix "v/"', 'at Hotel Vandivort', 'v/help']
 
 async def change_status():
   await client.wait_unitl_ready()
@@ -129,10 +129,6 @@ async def displayembed():
   await client.say(embed=embed)
   
   #<-----Ending Code----->
-  
-@client.command()
-async def logout():
-  await client.logout()
 
 client.loop.create_task(change_status())
 client.run(TOKEN)
