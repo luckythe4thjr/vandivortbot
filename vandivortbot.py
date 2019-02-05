@@ -7,7 +7,7 @@ TOKEN = 'TOKEN'
 
   #<-----Basic Setup----->
 
-client = commands.Bot(command_prefix = 'v/')
+client = commands.Bot(command_prefix = 'PREFIX')
 client.remove_command('help')
 status = ['Prefix "v/"', 'at Hotel Vandivort', 'v/help']
 
