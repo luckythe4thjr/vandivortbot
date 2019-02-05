@@ -3,7 +3,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = 'BOT_TOKEN'
+TOKEN = 'TOKEN'
 
   #<-----Basic Setup----->
 
@@ -135,4 +135,4 @@ async def logout():
   await client.logout()
 
 client.loop.create_task(change_status())
-client.run(BOT_TOKEN)
+client.run(TOKEN)
